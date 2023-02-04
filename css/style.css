@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: #fff;
+  color: rgba(255, 255, 255, 0.814);
+  transition: 0.3s ease;
+}
+section {
+  margin: 50px;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #e55353;
+  box-shadow: -20px -20px rgb(225, 223, 223);
+}
+
+header {
+  padding: 40px 70px;
+}
+header h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+header p {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+  opacity: 0.8;
+}
+.main ul {
+  margin-bottom: 20px;
+}
+.main ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(232, 116, 116);
+  margin-bottom: 5px;
+  padding: 30px 70px;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+ion-icon {
+  font-size: 30px;
+}
+
+.text {
+  padding: 0 70px;
+  margin-bottom: 40px;
+  text-align: end;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.text span {
+  margin-right: 10px;
+}
+footer {
+  padding: 0 70px;
+  padding-bottom: 50px;
+}
+footer input {
+  width: 70%;
+  border: 1px solid #fff;
+  font-size: 18px;
+}
+footer input,
+footer button {
+  outline: none;
+  padding: 15px 5px;
+}
+footer button {
+  width: 29%;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.356);
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+footer button:hover {
+  background-color: #e24c4c;
+}
+footer h3 {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+@keyframes animate {
+  0% {
+    opacity: 1;
+    text-decoration: none;
+  }
+  100% {
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+}
+.falseBg {
+  border: 3px solid #fff;
+  background-color: transparent;
+  border-radius: 3px;
+}
+.trueBg {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+.right .check {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.right .check::before {
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  left: 2px;
+  color: #fff;
+  font-size: 18px;
+}
+.right .trueBg::before {
+  content: "✔";
+  color: rgb(232, 116, 116);
+}
